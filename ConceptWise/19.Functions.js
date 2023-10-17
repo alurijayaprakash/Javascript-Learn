@@ -9,4 +9,5 @@ const getBrand = function (brand){
 }
 
 console.log(getBrand("Nike"))
+console.log("_____")
 console.log(JSON.stringify(getBrand("Adidas"),0 , 4))

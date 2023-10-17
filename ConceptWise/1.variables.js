@@ -1,4 +1,10 @@
 console.log('Hello World from Index')
+
+// Comment
+
+/* Multiline
+Comment */
+
 // Variables
 let Name = 'Hari';
 let cityName;
@@ -9,13 +15,14 @@ const interVal = 1;
 // data types
 // primitive data types : string, number, bollean, undefined, null
 
-
+// Note : Variables must start with letter ,   underscore , dollar sign
+//         Variables contains letters, numbers, underscores, dollor sign
 
 // string
 let nameX = 'Jayaprakash';
 let age = 30;
 let isApproved = false;
-// declared but not defined any value
+// firstName declared but not defined any value
 // by default it will take as undefined
 let firstName;
 let lastName = undefined;

@@ -16,8 +16,8 @@ console.log(Person)
 Person["City"] = "India"
 console.log(Person)
 
-delete Person.gender;
-delete Person["City"];
+delete Person.gender; // DELETE method-1
+delete Person["City"]; // DELETE method-2
 console.log(Person)
 
 console.log("-------------------------------")
@@ -41,4 +41,4 @@ for (const p in Person) {
 }
 
 console.log("~~Alternative Way to access values~~")
-console.log(Object.values(Person))
+console.log(Object.values(Person)) 
