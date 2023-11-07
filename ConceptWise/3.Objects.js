@@ -27,7 +27,7 @@ var User = {
     CourseList : [],
     buyCourse : function (courseName) {
         this.CourseList.push(courseName);
-    },
+    }, // this is anonymous function
     getCourseCount : function(){
         return `${this.firstName} is enrolled in total of ${this.CourseList.length} courses`
     },

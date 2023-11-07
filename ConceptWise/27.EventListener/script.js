@@ -17,6 +17,11 @@ function runEventListener(actualColorbox, DestinationColorBox ){
         // set color here
         DestinationColorBox.style.backgroundColor = getAnyColor(actualColorbox);
         console.log(`this ${PreviousCol} is Changed to ${getAnyColor(actualColorbox)} Color`)
+        
+        // Set Background Random Color on any box
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#"+randomColor;
+        console.log("Random Color", randomColor)
     });
 }
 

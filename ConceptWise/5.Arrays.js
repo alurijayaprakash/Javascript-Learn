@@ -34,7 +34,7 @@ Colors.forEach(eachColor => console.log("foreach",eachColor))
 console.log("~~~~~~~~~~")
 
 
-// For of loop
+// For of loop - item based loop
 for (eachCol of Colors) {
     console.log(eachCol)
 }
@@ -42,8 +42,8 @@ for (eachCol of Colors) {
 console.log("--------------")
 
 //for i loop - Index Based- return index 
-for (eachone in Colors) {
-    console.log(Colors[eachone])
+for (eachIndex in Colors) {
+    console.log(Colors[eachIndex])
 }
 
 
@@ -266,7 +266,7 @@ console.log("Morethan1000", Morethan1000)
 
 //Problem-3
 // Get all Employees have salary more than 2000
-// we cah achive this by filter 
+// we can achive this by filter 
 
 // filter
 function GetEmp2000(x){

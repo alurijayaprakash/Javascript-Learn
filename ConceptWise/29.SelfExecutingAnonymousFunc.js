@@ -19,7 +19,7 @@ const sumof2 = function(){
     return 1+2;
 }
 
-// Self executing anonymus functions 
+// Self executing anonymous functions 
 // we need not to invoke this functions
 // it will automatically run once program starts
 

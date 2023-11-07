@@ -25,17 +25,30 @@
             width: 100px;
             height: 100px;
             background-color: rgb(13, 168, 199);
+            border-radius: 50%;
+        }
+        .red-box:hover, .green-box:hover, .orange-box:hover {
+            border: 2px solid #000000;
+        }
+        .grid-parent {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
         }
 
     </style>
 
 </head>
 <body>
-    <div class="red-box"></div>
-    <div class="green-box"></div>
-    <div class="orange-box"></div>
-    <div>
-        <div class="center-box"></div>
+    <div class='parent grid-parent'>
+        <div class="red-box"></div>
+        <div class="green-box"></div>
+        <div class="orange-box"></div>
+        <div>
+            <div class="center-box"></div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>

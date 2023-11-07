@@ -32,7 +32,7 @@ Example: '5' == 5 will return true because the string is coerced to a number bef
 2. === (Strict Equality Operator):
 
 The === operator does not perform type coercion.
-It checks if the values are equal and of the same data type (i.e., it compares both the value and the data type).
+It checks if the values are exactly equal and of the same data type (i.e., it compares both the value and the data type).
 If the types of the operands are different, it returns false.
 Example: '5' === 5 will return false because the string and the number are of different types.
 */

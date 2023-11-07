@@ -24,15 +24,15 @@ console.log("Congrats done")
 
 // Computed
 
-const getInnerHTMLName = (item) => {
-    return item.innerHTML
-}
+// const getInnerHTMLName = (item) => {
+//     return item.innerHTML
+// }
 
 // Iterate and log
 setTimeout(() => {
     for (const eachitem of [ChannelName,SubCount,congratsnote]){
         console.log("----")
-        console.log(eachitem.innerHTML)
+        console.log("Iterate and log", eachitem.innerHTML)
     }
 }, 7000);
 
