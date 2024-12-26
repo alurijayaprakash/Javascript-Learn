@@ -1,0 +1,121 @@
+<!-- Ref: https://www.youtube.com/watch?v=fNcJuPIZ2WE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--
+    Input tag is self closing tag
+    name in input tag : used for naming input values
+    
+    for attribute : when you click on label then input field will be highlighted
+    we can achive this by two ways 
+    1. by using for(famous) - we need to enter id of element to be highlighted
+    2. by wrapping input inside the label (mostly used for checkboxes and radio buttons)
+
+    Field Validation - input>type will helps to validate the input data
+
+
+
+-->
+<body>
+    
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="S_Name">Name</label>
+            <input type="text" name="StudentName" id="S_Name" placeholder="username" required>
+        </div>
+        <div>
+            <label for="S_Email">Email</label>
+            <input type="email" name="StudentEmail" id="S_Email" value="abc@gmail.com">
+        </div>
+        <div>
+            <label for="S_Age">Age</label>
+            <input type="number" name="StudentAge" id="S_Age" step="1" min="0" max="100">
+        </div>
+        <div>
+            <label for="S_DOB">Date of Birth</label>
+            <input type="date" name="StudentDOB" id="S_DOB" min="2023-11-01">
+        </div>
+        <div>
+            <legend>Fav Food</legend>
+            <div>
+                <input type="checkbox" name="banana" id="S_banana">
+                <label for="S_banana">Banana</label>
+            </div>
+            <div>
+                <input type="checkbox" name="apple" id="S_apple">
+                <label for="S_apple">Apple</label>
+            </div>
+        </div>
+
+        <div>
+            <legend>Gender</legend>
+            <div>
+                <label for="S_Male">Male</label>
+                <input type="radio" id="S_Male" name="gender" value="male"> <!--name field should be same in radio buttons, otherwise it will select all values-->
+            </div>
+            <div>
+                <label for="S_Female">Female</label>
+                <input type="radio" id="S_Female" name="gender" value="female">
+            </div>
+        </div>
+
+        <div>
+            <label for="S_eyeColor">Eye Color</label>
+            <select name="eyeColor" id="S_eyeColor" multiple>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="blue" label="Blue"></option>
+                <!--by default select allow you only one value, but 
+                menthon as multiple , you can select multiple-->
+            </select>
+        </div>
+
+        <div>
+            <label for="S_bio">Bio</label>
+            <textarea id="S_bio" name="bio">My name 
+                is HHHH
+            </textarea>
+        </div>
+
+        <div>
+            <input type="hidden" name="hidden" value="hi">
+        </div>
+
+        <div>
+            <label for="S_file">File</label>
+            <input id="S_file" type="file" name="file" multiple>
+            <!-- use The formenctype Attribute in Form attributes > enctype="multipart/form-data"-->
+            <!-- use multiple keyword in input to upload multiple files in one go -->
+
+        </div>
+
+        <div>
+            <label for="S_phone">Phone</label>
+            <input type="tel" name="phone" id="S_phone">
+        </div>
+
+        <div>
+            <label for="S_url">URL</label>
+            <input type="url" name="url", id="S_url">
+        </div>
+
+
+        <div>
+            <label for="S_Password">Password</label>
+            <input type="password" name="StudentPassword" id="S_Password" required>
+        </div>
+        <button type="reset" > Reset </button>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+</body>
+</html>
